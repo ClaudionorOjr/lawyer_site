@@ -1,0 +1,52 @@
+@import '../../styles/global.scss';
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: fit-content;
+  padding: 1rem;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-top: .25rem solid $gray-700;
+
+  img {
+    width: 18.75rem;
+    margin: 1rem;
+    padding: 1rem;
+    align-self: flex-start;
+    
+    border-radius: 4px;
+    border: 10px outset $gray-700;
+    background: $gray-100;
+    box-shadow: -8px 8px 32px $gray-700;
+  }
+
+  div {
+    width: clamp(18.75rem, 50%, 31.75rem);
+    margin: .75rem;
+    // max-width: 31.75rem;
+    // min-width: 18.75rem;
+
+    color: $gray-900;
+    
+    h2 {
+      font-size: 3rem;
+    }
+    
+    p {
+      font-size: 1.25rem;
+      margin-top: .75rem;
+
+      text-align: justify;
+      text-indent: 4rem;
+    }
+
+    blockquote {
+      margin-top: 1rem;
+      color: $gray-600;
+    }
+  }
+}
