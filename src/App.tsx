@@ -15,7 +15,6 @@ function App() {
       <ContactForm />
       <Footer />
       <Navbar />
-      <WhatsappButton />
     </>
   )
 }

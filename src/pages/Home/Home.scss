@@ -9,19 +9,18 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url('../../assets/background.png');
+  background-image: url('/assets/background.png');
   background-size: cover;
   background-repeat: no-repeat;
 
-  p {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 5rem;
+  .logo {
+    width: 14rem;
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: clamp(1.75em, 3em + 3vw, 6rem);
     letter-spacing: 0.50rem;
+    text-align: center;
     text-transform: uppercase;
     font-family: 'Noto Sans JP', sans-serif;
     color: $white;

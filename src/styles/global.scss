@@ -28,6 +28,9 @@ $gray-900: #121214;
 body {
   background: linear-gradient(25deg, $gray-300, #FFF, $gray-300 85%);
   color: $white;
+
+  // ! Atenção
+  overflow-x: hidden;
 }
 
 body, input, textarea, button {

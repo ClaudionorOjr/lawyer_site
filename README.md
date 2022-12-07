@@ -38,14 +38,16 @@ $ npm i sass -D
 
 ## Há fazer !
 
-- Home ✅
-- About ✅
-- Navbar ✅
-- ContactForm ✅
-- Footer ✅
+- [x] Home
+- [x] About
+- [x] Navbar
+- [x] ContactForm
+- [x] Footer
 
-- Futuro  
-  [] Compartilhamento de estados entre componentes  
-  [] Modal confirmando envio do formulário  
-  [] Responsividade  
-  [] Navbar no mobile
+- Futuro
+  - [x] Responsividade
+  - [ ] Compartilhamento de estados entre componentes
+  - [ ] Modal confirmando envio do formulário
+  - [ ] Navbar no mobile
+
+#### Correções

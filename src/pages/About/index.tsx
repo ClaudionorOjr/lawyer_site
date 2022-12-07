@@ -1,11 +1,13 @@
-import perfilImage from '/assets/perfil.jpeg';
+import perfilImage from '/assets/leandro_editado.jpeg';
 import './About.scss'
 
 export function About() {
   return (
     <section className='aboutContainer' id='about'>
 
-    <img src={perfilImage} alt="Minha foto" />
+    <div className="thumb">
+      <img src={perfilImage} alt="Minha foto" />
+    </div>
 
       <div>
         <h2>Sobre mim</h2>

@@ -17,20 +17,20 @@ export function ContactForm() {
     <section className="servicesContainer" id='services'>
 
       <div className="services">
-        <h2>Serviços Prestados</h2>
+        <h2>Áreas de Atuação</h2>
 
-        <p> <CircleWavyCheck size={24} weight="fill"/> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p> <CircleWavyCheck size={24} weight="fill"/> Previdenciária</p>
 
-        <p> <CircleWavyCheck size={24} weight="fill"/> Lorem ipsum dolor sit amet.</p>
+        <p> <CircleWavyCheck size={24} weight="fill"/> Trabalhista</p>
 
-        <p> <CircleWavyCheck size={24} weight="fill"/> Lorem ipsum dolor sit amet consectetur.</p>
+        <p> <CircleWavyCheck size={24} weight="fill"/> Direito da família</p>
 
-        <p> <CircleWavyCheck size={24} weight="fill"/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum?</p>
+        <p> <CircleWavyCheck size={24} weight="fill"/> Tribuária</p>
 
-        <p> <CircleWavyCheck size={24} weight="fill"/> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <p> <CircleWavyCheck size={24} weight="fill"/> Empresarial</p>
       </div>
 
-      <form action="https://formsubmit.co/claudionorojr@hotmail.com" method="POST" encType="multipart/form-data">
+      <form action="https://formsubmit.co/leandroribeiroadv.jus@gmail.com" method="POST" encType="multipart/form-data">
         <h3> <ChatCenteredText size={28} weight="fill"/> Dúvidas? Vamos conversar a respeito!</h3>
         <p>Utilize do formulário para entrar em contato, ou caso seja de sua preferência, mais abaixo você encontra outros meios de contato.</p>
 

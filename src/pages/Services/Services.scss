@@ -22,6 +22,7 @@
       margin: 1rem 0;
 
       align-items: center;
+      font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
 
       svg {
         margin-right: .5rem;
@@ -34,7 +35,7 @@
   form {
     
     width: 31.75rem;
-    min-width: 18.5rem;
+    min-width: 20rem;
     padding: 1rem;
     
     background: linear-gradient(100deg, $blue-700 45%, $blue-900 80%);
