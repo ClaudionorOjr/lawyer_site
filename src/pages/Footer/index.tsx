@@ -2,6 +2,7 @@ import { EnvelopeSimple, GithubLogo, InstagramLogo, LinkedinLogo, MapPin, Whatsa
 import './Footer.scss'
 
 export function Footer() {
+
   return (
     <footer id='footer'>  
       <section className='contactContainer'>
@@ -36,8 +37,11 @@ export function Footer() {
 
       <div className='credits' >
         
-        2022 <sup>&copy;</sup> &ensp;Desenvolvido por <span> &lt;ClaudionorOjr/&gt; </span>
-        <div className='devSocialMedias'>
+        2022 <sup>&copy;</sup> &ensp;Desenvolvido por
+        <span> 
+          &lt;ClaudionorOjr/&gt;
+        
+        <div className={'devSocialMedias'}>
           <a target='_blank' href="https://github.com/claudionorojr">
             <GithubLogo size={32} weight='fill' alt="Github Logo"/>
           </a>
@@ -45,6 +49,8 @@ export function Footer() {
             <LinkedinLogo size={32} weight='fill' alt="Linkedin Logo"/>
           </a>
         </div>
+        
+        </span>
       </div>
     </footer>
   )

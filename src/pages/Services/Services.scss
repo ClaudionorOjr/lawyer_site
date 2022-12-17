@@ -1,6 +1,7 @@
 @import '../../styles/global.scss';
 
 .servicesContainer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -81,8 +82,11 @@
       z-index: 0;
       
       & span:nth-child(1) {
+        width: 80%;
         margin-left: 1rem;
         font-size: .875rem;
+        // overflow-x: hidden;
+        text-overflow: ellipsis;
       }
       
       & span:nth-child(2) {

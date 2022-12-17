@@ -1,15 +1,16 @@
 import { ChatCenteredText, CircleWavyCheck } from 'phosphor-react'
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { CustomizedInput } from '../../components/Input'
 import './Services.scss'
 
 export function ContactForm() {
   const [fileName, setFileName] = useState('Anexar arquivo')
+  const [subjectReply, setSubjectReply] = useState('')
 
   function handleChange(event: FormEvent<HTMLInputElement>){
     const value = event.currentTarget.value
     
-    // Retorna um fakepath e o arquivo, estou pegando somente o nome do arquivo
+    // Retorna um fakepath até o arquivo, estou pegando somente o nome do arquivo
     setFileName(value.substring(12))
   }
 
@@ -25,7 +26,7 @@ export function ContactForm() {
 
         <p> <CircleWavyCheck size={24} weight="fill"/> Direito da família</p>
 
-        <p> <CircleWavyCheck size={24} weight="fill"/> Tribuária</p>
+        <p> <CircleWavyCheck size={24} weight="fill"/> Tributária</p>
 
         <p> <CircleWavyCheck size={24} weight="fill"/> Empresarial</p>
       </div>
@@ -61,10 +62,11 @@ export function ContactForm() {
           id="subject" 
           textLabel="Assunto" 
           placeholder='Sobre o que deseja tratar'
+          subject={setSubjectReply}
         />
 
         {/* Editar o título do e-mail de resposta automaticamente com o que for digitado em 'value' */}
-        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="hidden" name="_subject" value={subjectReply} />
         
         <CustomizedInput 
           tag="textarea" 
@@ -88,6 +90,8 @@ export function ContactForm() {
           <span>{fileName}</span>
           <span>Procurar</span>
         </label>
+
+        <input type="hidden" name="_captcha" value="false"></input>
 
         <button type="submit">Enviar</button>
 

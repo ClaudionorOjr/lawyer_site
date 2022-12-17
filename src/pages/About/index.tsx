@@ -11,13 +11,12 @@ export function About() {
 
       <div>
         <h2>Sobre mim</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque, iusto quisquam perspiciatis earum atque est ea esse magni repudiandae fugiat recusandae, reprehenderit ipsam vitae non. Consectetur illum beatae commodi.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illum saepe temporibus commodi quia culpa cupiditate excepturi sit deleniti animi enim aliquam quisquam, dicta, esse suscipit recusandae dolor cum harum. 
+        <p>
+          Sou Leandro Ribeiro, Advogado, formado pela Universalidade Potiguar. 
+          Atuo nas área mais sensíveis da sociedade, empenhando meus esforços para garantir os direitos dos cidadãos.
+          Para isto, conto com minha disciplina e coragem, qualidades profissionais que fazem parte da estrutura do sucesso.
+          Possuo experiências variadas, da docência até responsável técnico de segurança do trabalho. Vivências que aplico nas relações como advogado para resolver os litígios e promover a satisfação dos clientes. 
         </p>
-
-        <blockquote>
-          "Rapadura é doce, mas num é mole não." – <cite>Fulano D Tal</cite>
-        </blockquote>
       </div>
     </section>
   )

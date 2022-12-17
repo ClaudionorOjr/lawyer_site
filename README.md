@@ -46,7 +46,6 @@ $ npm i sass -D
 
 - Futuro
   - [x] Responsividade
-  - [ ] Compartilhamento de estados entre componentes
   - [ ] Modal confirmando envio do formulário
   - [ ] Navbar no mobile
 

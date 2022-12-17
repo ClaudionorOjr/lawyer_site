@@ -1,17 +1,13 @@
-import { InputHTMLAttributes, useEffect, useState } from 'react'
+import { InputHTMLAttributes, SetStateAction } from 'react'
 import './Input.scss'
 
 interface CustomizedInputProps extends InputHTMLAttributes<HTMLInputElement> {
   tag: 'input' | 'textarea'
   textLabel: string
+  subject?: React.Dispatch<SetStateAction<string>>
 }
 
-export function CustomizedInput({tag, type, name, id, placeholder = ' ', required=false, textLabel}: CustomizedInputProps){
-  const [subjectReply, setSubjectReply] = useState('')
-
-  useEffect(() => {
-    console.log(subjectReply)
-  },[subjectReply])
+export function CustomizedInput({ tag, type, name, id, placeholder = ' ', required=false, textLabel, subject }: CustomizedInputProps){
 
   return (
     <div className='inputContainer'>
@@ -24,7 +20,7 @@ export function CustomizedInput({tag, type, name, id, placeholder = ' ', require
             id={id} 
             placeholder={placeholder}
             required={required}
-            onChange={(event) => { textLabel === 'Assunto' && setSubjectReply(event.target.value)}
+            onChange={(event) => { textLabel === 'Assunto' && subject!(event.target.value)}
             }
           />
           <label className="formLabel" htmlFor={id}>{textLabel}</label>
